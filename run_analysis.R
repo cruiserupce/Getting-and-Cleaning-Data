@@ -1,11 +1,10 @@
-
 # project Getting and Cleaning Data
 # source("run_analysis.R")
 
+run_analysis <- function() {
+
 #0 get data
-
-
-
+  
 if(!file.exists("UCI HAR Dataset")){
   temp <- tempfile()
   download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",temp)
@@ -14,10 +13,9 @@ if(!file.exists("UCI HAR Dataset")){
 } else {
   print("file already exists")
 }
-
-
+  
 # 1. Merges the training and the test sets to create one data set.
-run_analysis <- function() {
+  
 #load and merge X
 tmp1 <- read.table("UCI HAR Dataset/train/X_train.txt")
 tmp2 <- read.table("UCI HAR Dataset/test/X_test.txt")

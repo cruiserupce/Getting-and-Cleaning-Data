@@ -6,17 +6,16 @@ This code is for Coursera course: Getting and Cleaning Data through Johns Hopkin
 ## Course Project
 (find all project-related materials in the UCI HAR Dataset directory, however, copies of the important files have been put into this main directory to fulfil the submission requirement)
 
-* Download original data source from : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+* Original data source from : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 * Choose your working directory 'setwd("path to your working directory")'
-
-* Unzip original data source into your working directory
 
 * Put run_analysis.R into your working directory
 
 * load script into R 'source("run_analysis.R")'
 
-* call  'tidy_data <- run_analysis()' and it will return data frame of tidy data. It is 180x68 because there are 30 subjects and 6 activities, thus "for each activity and each subject" means 30 * 6 = 180 rows.
+* call  'tidy_data <- run_analysis()' script will automatically download zip file, unzip it 
+and it will return data frame of tidy data. It is 180x68 because there are 30 subjects and 6 activities, thus "for each activity and each subject" means 30 * 6 = 180 rows.
 
 
 Whole script works in tha way that it connects(rbind) data from train and test folders like
